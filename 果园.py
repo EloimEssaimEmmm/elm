@@ -118,7 +118,7 @@ class LYB:
             res1 = self.req(api1, json.dumps({}), 'False', "1.0")
             if res1.json()['ret'][0] == 'SUCCESS::调用成功':
                 self.name = res1.json()["data"]["encryptMobile"]
-                api = 'mtop.koubei.interaction.center.common.queryintegralproperty.v1'
+                api = 'mtop.koubei.interaction.center.common.queryintegralproperty.v2'
                 data = json.dumps({"templateIds": "[\"1404\"]"})
                 try:
                     res = self.req(api, data, 'False', "1.0")
