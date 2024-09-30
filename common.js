@@ -9,7 +9,6 @@ const _0x731544 = ["iPad;3.7.0;14.4;network/wifi;Mozilla/5.0 (iPad; CPU OS 14_4 
     _0x30f1ac = require("child_process").exec,
     _0x5c8af1 = "网络异常，跳过",
     _0x44ed71 = require("crypto");
-const signhost = "162.16.3.71:32773";
 const https = require("https");
 const cheerio = require("cheerio");
 const axios = require("axios");
@@ -527,7 +526,7 @@ function _0x235b2e(_0x82a409, _0x51972d, _0x4a4231, _0x52a5f9, _0x411ecc, _0x5bd
             "Content-Type": "application/json"
         },
         method: "POST",
-        url: `http://${signhost}/api/getXSign`,
+        url: `http://162.16.3.71:32773/api/getXSign`,
         body: JSON.stringify(_0x5c4368),
         timeout: 15000
     };
