@@ -170,7 +170,7 @@ class LYB:
                             if "roleId" in role_base_info:
                                 roleId = role_base_info["roleId"]
                                 print(role_base_info["roleId"])
-            for tag_data in res3.json()["data"]["data"]["603040_6723057310"]["blockData"]["roleId"]["tagData"]:
+            for tag_data in res3.json()["data"]["data"]["603040_6723057310"]["blockData"]["role"]["tagData"]:
                 for result in tag_data["result"]:
                     for role_info in result["roleInfoDtoList"]:
                         Sunlightvalue = role_info["roleLevelExpInfoDto"]["remainingProgress"]
