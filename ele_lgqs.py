@@ -46,9 +46,9 @@ def generate_random_string(length=50):
 def get_ck_usid(ck1):
     key_value_pairs = ck1.split(";")
     for pair in key_value_pairs:
-        key, value = pair.split("=")
+        key = pair.split("=")[0]
         if key == "USERID":
-            return value
+            return pair.split("=")[1]
         else:
             return '账号'
 
