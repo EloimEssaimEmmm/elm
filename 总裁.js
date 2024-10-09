@@ -7,7 +7,7 @@ const {
   cookiesToMap,
   elmRequestByApi,
   elmRequestByH5
-} = require('./comm');
+} = require('./common.js');
 
 
 class Task {
